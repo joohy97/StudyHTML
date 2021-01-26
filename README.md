@@ -60,7 +60,7 @@ namespace HelloWorldApp
 
 - [MicroSoft](https://www.microsoft.com)
 - [Naver](https://www.naver.com)
-- 문장안에서 [링크](https://www.google.com) 만들기
+- 문장안에서 [링크](https://www.google.com "GOOGLE") 만들기
 
 ## JavaScript
 JavaScript 기본 학습
