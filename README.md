@@ -40,6 +40,18 @@ namespace HelloWorldApp
 
 ```
 
+```javascript
+
+let sumNumbers = (firstNum, lastNum) => {
+
+  return firstNum + lastNum;
+
+};
+
+sumNumbers(100, 200);
+
+```
+
 ## JavaScript
 JavaScript 기본 학습
 
