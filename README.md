@@ -72,7 +72,7 @@ JavaScript 기본 학습
 ## Project
 전체 통합 프로젝트
 
------------------------------
+==================================================
 ##이미지 연습
 1 절대경로
 ![이미지연습](https://github.com/joohy97/StudyHTML/blob/main/ref_images/rose.png "절대경로")
