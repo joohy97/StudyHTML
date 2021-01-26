@@ -10,9 +10,9 @@ HTML 기본 학습
 2. HTML의 역사
 3. HTML5의 차이
 
-* Hyper Text Markup Language 정의
-* HTML의 역사
-* HTML5의 차이
+- Hyper Text Markup Language 정의
+- HTML의 역사
+- HTML5의 차이
 
 ## CSS3
 CSS 기본 학습
