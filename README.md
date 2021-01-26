@@ -67,6 +67,9 @@ namespace HelloWorldApp
 - [ ] 운동 하기
 - [x] 강의 듣기
 
+* [ ] 운동 하기
+* [x] 강의 듣기
+
 ## JavaScript
 JavaScript 기본 학습
 
