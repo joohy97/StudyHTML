@@ -66,6 +66,9 @@ namespace HelloWorldApp
 ## JavaScript
 JavaScript 기본 학습
 
+![이미지연습](https://github.com/joohy97/StudyHTML/blob/main/ref_images/rose.png "절대경로")
+![이미지연습](/ref_images/rose.png "절대경로")
+
 ## Responsive Web
 응답형 웹 기본 학습
 
