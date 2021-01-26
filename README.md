@@ -63,6 +63,10 @@ namespace HelloWorldApp
 - 문장안에서 [링크](https://www.google.com "GOOGLE") 만들기
 - 담당자 메일 : <joohyun104@gmail.com>
 
+- [ ] 운동 하기
+
+- [x] 강의 듣기
+
 ## JavaScript
 JavaScript 기본 학습
 
