@@ -71,6 +71,7 @@ JavaScript 기본 학습
 
 ## Project
 전체 통합 프로젝트
+
 -----------------------------
 ##이미지 연습
 1 절대경로
@@ -78,4 +79,4 @@ JavaScript 기본 학습
 2 상대경로
 ![이미지연습](/ref_images/rose.png "상대경로")
 3 사이즈 조절(img태그)
-<img src="https://github.com/joohy97/StudyHTML/blob/main/ref_images/rose.png" width="400" title="절대경로" alt="이미지연습" />
+<img src="https://github.com/joohy97/StudyHTML/blob/main/ref_images/rose.png" width="300" title="절대경로" alt="이미지연습" />
