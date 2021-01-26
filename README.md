@@ -57,6 +57,8 @@ namespace HelloWorldApp
 }
 
 ```
+[MicroSoft](https://www.microsoft.com)
+[Naver](https://www.naver.com)
 
 ## JavaScript
 JavaScript 기본 학습
