@@ -40,15 +40,21 @@ namespace HelloWorldApp
 
 ```
 
-```javascript
+```c#
+using System;
 
-let sumNumbers = (firstNum, lastNum) => {
-
-  return firstNum + lastNum;
-
-};
-
-sumNumbers(100, 200);
+namespace HelloWorldApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+            //글꼴 확인 : 1 l ㅣ | 0 o O
+            //코드 하이라이트
+        }
+    }
+}
 
 ```
 
