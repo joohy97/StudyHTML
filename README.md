@@ -66,6 +66,7 @@ namespace HelloWorldApp
 
 
 - [ ] 운동 하기
+
 - [x] 강의 듣기
 
 * [ ] 운동 하기
