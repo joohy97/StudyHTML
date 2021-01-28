@@ -1,1 +1,1 @@
-alert("Outer script :)");
+alert("Outer script executed!!");
