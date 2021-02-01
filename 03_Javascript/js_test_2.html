@@ -10,9 +10,49 @@
         var radius = 10;
         var pi = 3.141592;
 
-        alert("결과 : " + pi * radius);
+        console.log("결과 : " + pi * radius);
+
+        //조건문
+        if (35 < 100) {
+            console.log("참");
+        }
+        
+        //조건문2 (else, 변수 활용)
+        var a=35;
+        var b=100
+        if (a < b) {
+            console.log("참");
+        }
+        else {
+            console.log("거짓");
+        }
+
+        // 날짜, 시간
+        var date = new Date();
+        //요소추출
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1; //주의!
+        var day = date.getDay();
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        var sec = date.getSeconds();
+
+        console.log(year + "-" + month + "-" + day + " " + hour + ":" + min + ":" + sec);
+
+        if(hour<12) {
+            console.log("오전입니다")
+        }
+        else {
+            console.log("오후입니다")
+        }
 
 
+
+
+
+
+
+        console.log("스크립트 끝")
     </script>
 </head>
 <body>
