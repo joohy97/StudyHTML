@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html data-rint="alert()">
+<head>
+    <title>Document Object Model</title>
+    <script>
+        // h1 태그의 배경 색상을 변경합니다.
+        document.querySelector('h1').style.backgroundColor = 'red';
+
+        // h2 태그의 글자 색상을 변경합니다.
+        document.querySelector('h2').style.color = 'red';
+
+        //body가 렌더링 되기 전에 script가 실행되므로 글자 색상이 바뀌지 않는다
+        
+        /*
+        1. script 태그를 body로 옮기기
+        2. window.onload 시 실행되는 함수로 지정
+        */
+    </script>
+</head>
+<body>
+    <h1>Process - 1</h1>
+    <h2>Process - 2</h2>
+</body>
+</html>
