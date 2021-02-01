@@ -49,22 +49,38 @@
 
         //중첩 if
         if (hour<5) {
-            console.log("자라")
+            console.log("자라");
         } else if (hour<7) {
-            console.log("일어나라")
+            console.log("일어나라");
         } else if (hour<9) {
-            console.log("출근")
-        } else  { 
-            console.log("ㅎㅎㅎ")
-        }{
-            
-        }{
-            
+            console.log("출근");
+        } else  if (hour<18) { 
+            console.log("일하기");
+        } else if (hour=18) {
+            console.log("퇴근");
         }
 
+        //배열
+        var array = [1,2,3,4,5,6,7,8,9,10];
+        console.log(array)
 
+        //배열 요소 접근
+        console.log("0번째 값 : " + array[0]);
+        console.log("4번째 값 : " + array[4]);
+        console.log("10번째 값 : " + array[10]); //undefined
 
+        //while 반복
+        var i = 0;
+        while (i < array.length) {
+            console.log("while " + i + "번째 요소 : " + array[i]);
+            i++;
+        }
 
+        //for 반복
+        for (let index = 0; index < array.length; index++) {
+            console.log("for " + index + "번째 요소 : " + array[index]);
+            
+        }
 
         console.log("스크립트 끝")
     </script>
