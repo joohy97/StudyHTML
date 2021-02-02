@@ -5,8 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>JQuery Test1</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    
+
     <!--jquery 불러오는 방법1-->
     <!-- <script src='js/jquery-3.5.1.min.js'></script> -->
 
@@ -17,19 +16,81 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
     <script>
-        /*로드 이벤트 (구세대 유물)
-        window.onload = function(){
-
-        }*/
+        // 로드 이벤트 (구세대 유물)
+        // window.onload = function(){
+        // }
 
         //JQuery 이후에 바뀐 로드 이벤트
         $(document).ready(function() {
-            alert("Hello world");
+            // alert("Hello world");
+
+            $("h1").css("background-color", "black");
+            $("h1").css("color", "white");
+
+            console.log($("script").attr("src"));
+
+            //이미지 속성 변경
+            // $("img").attr("alt", "jQuery라이브러리로 속성 지정");
+            // $("img").attr("src", "https://placehold.it/200x200");
+            // $("img").attr("width", "100px");
+
+            //이미지 속성 변경2
+            // $("img").attr({
+            //     alt: "jQuery라이브러리로 속성 지정",
+            //     src: "https://placehold.it/200x200", 
+            //     width: "100px"
+            // });
+
+            //이미지 속성 변경3 - 동적
+            $("img").attr({
+                alt: "jQuery라이브러리로 속성 지정",
+                src: function (index) {
+                    //변수
+                    var size = (index + 1) * 100;
+                    return "https://placehold.it/" + size + "x300";
+                }
+            });    
+
+            //box 클래스 사용
+            $(".box").css({
+                float: "left",
+                margin: "10px",
+                width: "100px",
+                height: "100px",
+                backgroundColor: function(i) {
+                    if (i == 0) {
+                        return "red";
+                    } else if (i == 1) {
+                        return "green";
+                    } else {
+                        return "blue";
+                    }
+
+                }
+
+
+            });
+
+
+
+
         });
 
     </script>
 </head>
 <body>
     <h1>JQuery</h1>
+    <h1>Hello World</h1>
+    <h1>Tuesday</h1>
+
+    <br>
+    <img>
+    <img>
+    <img>
+
+    <br>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
 </body>
 </html>
