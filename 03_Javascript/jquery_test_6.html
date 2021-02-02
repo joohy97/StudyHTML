@@ -8,7 +8,7 @@
     <script src='js/jquery-3.5.1.min.js'></script>
     <script>
         $(document).ready(function() {
-            //문서객체 추가 함수
+            //문서객체 추가 함수 : 호출되면 body에 <h1> 40줄 추가
             var appendDoc = function () {
                 for (let index = 0; index < 40; index++) {
                     $("<h1>Infinity scroll " + index + "</h1>").appendTo("body");                    
@@ -18,7 +18,7 @@
             //함수 호출
             appendDoc();
 
-            
+
             //무한 스크롤 만들기 : 스크롤 높이와 문서의 높이가 같을때 함수 호출
             $(window).scroll(function(){
                 var scrollHeight = $(window).scrollTop() + $(window).height();
