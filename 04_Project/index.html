@@ -88,6 +88,37 @@
             background-color: #e1dfdf;
             border-radius: 2px;
         }
+
+        /* 검색 양식 */
+        .header-search-form {
+            padding: 7px;
+        }
+        .input-search {
+            height: 26px; /* 교안 수정 */
+            display: block;
+            float: left;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 15px 0 0 15px;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5); /* 안쪽에 그림자 (inset) */
+        }
+        .input-search:focus { /* 검색창에 커서가 있을 때 */
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+            outline: 0;
+            border-color: rgba(82, 168, 236, 0.8);
+        }
+        .input-submit {
+            display: block;
+            float: left;
+            width: 50px; height: 26px;
+            border-radius: 0 15px 15px 0;
+            border: 1px solid #cccccc;
+            margin-left: -1px;
+        }
+
+
+
+
     </style>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
