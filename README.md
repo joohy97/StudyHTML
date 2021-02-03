@@ -22,10 +22,9 @@ JavaScript 기본 학습
 
 -------------------------------------------------------------
 
-## Responsive Web
-응답형 웹 기본 학습
-
--------------------------------------------------------------
 
 ## Project
 전체 통합 프로젝트
+#### 반응형 웹 그리드 레이아웃 웹페이지 실습
+![결과(메인페이지)](https://github.com/joohy97/StudyHTML/blob/main/ref_images/project_result_main.PNG)
+![결과(라이트박스페이지)](https://github.com/joohy97/StudyHTML/blob/main/ref_images/project_result_lightbox.PNG)
