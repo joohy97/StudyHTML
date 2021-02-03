@@ -17,6 +17,7 @@
         li { list-style: none; }
         body { background-color: #f7f5f5;}
     </style>
+
     <style>
         /* 헤더 */
         #main-header {
@@ -36,7 +37,7 @@
             text-indent: -9999px;  /*글자 안보이게 하기*/
         }
 
-        /* 메뉴 */
+        /* 풀다운 메뉴 */
         .outer-menu {
             float: left;
             width: 100px; height: 20px;
@@ -152,24 +153,16 @@
             margin: 0 auto;
         }
         @media (max-width: 919px) { /* 반응형 웹 : 3줄 */
-            #main-section {
-            width: 690px;
-            }
+            #main-section { width: 690px; }
         }
-        @media (max-width: 920px) and (max-width: 1149px) { /* 반응형 웹 : 4줄 (교재 오타) */
-            #main-section {
-            width: 920px;
-            }
+        @media (min-width: 920px) and (max-width: 1149px) { /* 반응형 웹 : 4줄 (교재 오타) */
+            #main-section { width: 920px; }
         }
-        @media (max-width: 1150px) and (max-width: 1379px) { /* 반응형 웹 : 5줄 */
-            #main-section {
-            width: 115px;
-            }
+        @media (min-width: 1150px) and (max-width: 1379px) { /* 반응형 웹 : 5줄 */
+            #main-section { width: 1150px; }
         }
-        @media (max-width: 1380px) { /* 반응형 웹 : 6줄 */
-            #main-section {
-            width: 1380px;
-            }
+        @media (min-width: 1380px) { /* 반응형 웹 : 6줄 */
+            #main-section { width: 1380px; }
         }
 
         /* 라이트 박스 */
@@ -201,6 +194,48 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script>
+        //로드 이벤트(JQuery)
+        $(document).ready(function() {
+            //풀아웃 메뉴 - 마우스 올려지면 메뉴 나오게
+            $(".outer-menu").hover(function() {
+                $(this).find(".inner-menu").css("display", "block");
+            }, function() {
+                $(this).find(".inner-menu").css("display", "none");
+            });
+
+            //masonry 그리드 레이아웃, 이미지 로드 적용
+            $("#main-section").imagesLoaded(function() {
+                $("#main-section").masonry({
+                itemSelector: ".paper",
+                columnWidth: 230,
+                isAnimated: true
+                });
+            });
+
+            //라이트박스
+            $(".paper").click(function() { showLightBox(); });
+            $("#darken-background").click(function() { hideLightBox(); });
+            function showLightBox() {
+                $("#darken-background").show();
+                $("#darken-background").css("top", $(window).scrollTop());
+                $("body").css("overflow", "hidden");
+            };
+            function hideLightBox() {
+                $("#darken-background").hide();
+                $("body").css("overflow", "auto"); //교안 수정사항(hidden의 반대)
+            };
+            //라이트박스 이벤트 서포트 : 흰 영역 클릭 시 라이트박스 꺼지는 오류 방지
+            $("#lightbox").click(function(event) {
+                event.stopPropagation();
+            });
+
+
+
+
+        });
+    </script>
+
 </head>
 <body>
     <header id="main-header">
