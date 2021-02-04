@@ -24,9 +24,10 @@
                     $(paper1 + index + paper2).appendTo("#main-section");                    
                 }
             };
-            //페이지 객체 총 20개 생성
-            appendDoc();
-            appendDoc();
+            //원하는 만큼 페이지 객체 생성 반복(1회 10개)
+            for (let n = 0; n < 3; n++) {
+                appendDoc();             
+            }
             
             //풀아웃 메뉴 - 마우스 올려지면 메뉴 나오게
             $(".outer-menu").hover(function() {
