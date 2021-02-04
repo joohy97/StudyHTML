@@ -30,10 +30,7 @@
         .paper-holder img {
             border-radius: 5px;
         }
-        #random-image {
-            border-radius: 5px;
-            box-shadow: 0 1px 3px rgba(34, 25, 25, 0.5);
-        }
+
 
         /* 섹션 스타일 */
         #main-section {
@@ -73,7 +70,17 @@
             text-align: center;
         }
 
-        .user-information { overflow: hidden; text-align: left;}
+        .user-information { overflow: hidden; text-align: left; border-radius: 5px; }
         .user-information-image { float: left; width: 70px; }
         .user-information-text { float: right; width: 620px; }
         .lightbox-splitter { margin: 10px 0;}
+
+        .user-information-text > p { font-size: 12px; }
+
+        #random-image {
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(34, 25, 25, 0.5);
+        }
+        #random-image2 {
+            border-radius: 5px;
+        }
