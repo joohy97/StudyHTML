@@ -28,5 +28,7 @@ JavaScript 기본 학습([JS 소스](https://github.com/joohy97/StudyHTML/tree/m
 ## Project
 전체 통합 프로젝트([HTML 소스](https://github.com/joohy97/StudyHTML/blob/main/04_Project/index.html))
 #### 반응형 웹 그리드 레이아웃 웹페이지 실습
-![결과(메인페이지)](https://github.com/joohy97/StudyHTML/blob/main/ref_images/project_result_main.PNG "전체레이아웃")
-![결과(라이트박스페이지)](https://github.com/joohy97/StudyHTML/blob/main/ref_images/project_result_lightbox.PNG "팝업레이아웃")
+![결과(전체레이아웃)](https://github.com/joohy97/StudyHTML/blob/main/ref_images/project_result1.JPG "전체레이아웃")
+![결과(팝업레이아웃)](https://github.com/joohy97/StudyHTML/blob/main/ref_images/project_result2.JPG "팝업레이아웃")
+![결과(반응형웹3줄)](https://github.com/joohy97/StudyHTML/blob/main/ref_images/project_result_res3.JPG "반응형웹(3줄)")
+![결과(반응형웹5줄)](https://github.com/joohy97/StudyHTML/blob/main/ref_images/project_result_res5.JPG "반응형웹(5줄)")
