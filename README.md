@@ -31,6 +31,6 @@ JavaScript 기본 학습([JS 소스](https://github.com/joohy97/StudyHTML/tree/m
 ![결과(전체레이아웃)](https://github.com/joohy97/StudyHTML/blob/main/ref_images/result1.JPG "전체레이아웃")
 ![결과(팝업레이아웃)](https://github.com/joohy97/StudyHTML/blob/main/ref_images/result2.JPG "팝업레이아웃")
 
-반응형웹 실행 결과
+#### 반응형웹 실행 결과
 ![결과(반응형웹3줄)](https://github.com/joohy97/StudyHTML/blob/main/ref_images/result_res3.JPG "반응형웹(3줄)")
 ![결과(반응형웹5줄)](https://github.com/joohy97/StudyHTML/blob/main/ref_images/result_res5.JPG "반응형웹(5줄)")
