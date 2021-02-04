@@ -15,9 +15,6 @@
     <script>
         //로드 이벤트(JQuery)
         $(document).ready(function() {
-            
-            
-
 
             //문서 객체 추가 함수 : images 폴더에 있는 10개 이미지 순서대로 페이퍼 10개 만들어서 추가
             var appendDoc = function() {
@@ -70,13 +67,10 @@
                 $("body").css("overflow", "hidden");
 
                 //랜덤 색
-                var color = '#'; 
-                var letters = ['F3E5F5', 'E0F7FA', 'E0F2F1', 'F9FBE7', 'EFEBE9'];
-                color += letters[Math.floor(Math.random() * letters.length)]; 
-                // 컬러는 상기 변수들을 조립하는데 랜덤으로 조립한다. 
-                //document.getElementsByClassName('paper-content').style.backgroundColor = color; 
-                // 조립한 컬러를 프론트엔드에서 지정한 ID에 적용한다.
-                $(".user-information").css("background-color", color);
+                // var color = '#'; 
+                // var letters = ['F3E5F5', 'E0F7FA', 'E0F2F1', 'F9FBE7', 'EFEBE9'];
+                // color += letters[Math.floor(Math.random() * letters.length)]; 
+                // $(".user-information").css("background-color", color);
             };
 
             //라이트박스 숨기기
