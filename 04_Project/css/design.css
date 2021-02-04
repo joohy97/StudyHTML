@@ -63,18 +63,22 @@
         #lightbox {
             width: 700px;
             /* margin: 20px auto; padding: 15px; */
-            margin: 20px auto; padding-bottom: 20px;
+            margin: 20px auto; padding: 5px 5px 20px 5px;
             border: 1px solid #333333;
             border-radius: 10px;
             background-color: white;
             box-shadow: 0 5px 5px rgba(34, 25, 25, 0.4);
             text-align: center;
         }
-
-        .user-information { overflow: hidden; text-align: left; border-radius: 5px; padding: 20px;}
+        .user-information { 
+            overflow: hidden; 
+            text-align: left; 
+            border-radius: 5px 5px 0 0 ; 
+            padding: 20px;
+        }
         .user-information-image { float: left; width: 70px; }
         .user-information-text { float: right; width: 580px; }
-        .lightbox-splitter { margin: 5px 20px 10px 20px; }
+        .lightbox-splitter { margin: 5px 10px 20px 10px; }
         .user-information-text > p { font-size: 12px; }
 
         #random-image { border-radius: 5px; box-shadow: 0 1px 3px rgba(34, 25, 25, 0.5); }

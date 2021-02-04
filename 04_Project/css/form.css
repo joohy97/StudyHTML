@@ -58,7 +58,7 @@
 }
 #main-navigation > ul > li {
     display: inline; /*한줄로 나오게 만들기*/
-    padding: 0 5px;
+    padding: 0 15px;
     line-height: 30px;
     font-size: 13px;
     color: #524d4d;
