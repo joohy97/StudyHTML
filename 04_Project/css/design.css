@@ -25,6 +25,7 @@
             float: left;
             width: 150px;
             margin-left: 10px;
+            font-size: 20px;  font-weight: bold;
         }
         .paper-holder img {
             border-radius: 5px;

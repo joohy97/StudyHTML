@@ -15,6 +15,18 @@
     <script>
         //로드 이벤트(JQuery)
         $(document).ready(function() {
+            //문서 객체 추가 함수 : images 폴더에 있는 10개 이미지 순서대로 페이퍼 10개 만들어서 추가
+            var appendDoc = function() {
+                var paper1 = '<div class="paper"><div class="paper-holder"><a><img width="190" src="images/img';
+                var paper2 = '.jpg"></a></div><p class="paper-description">Mauris finibus ut mi quis finibus. Nam ac neque finibus.</p><div class="paper-content"><a class="paper-link" href="#"><img width="30" src="https://placekitten.com/70/70"></a><p class="paper-text">Anonymous</p></div></div>';
+                    for (let index = 1; index < 11; index++) {
+                    $(paper1 + index + paper2).appendTo("#main-section");                    
+                }
+            };
+            //페이지 객체 총 20개 생성
+            appendDoc();
+            appendDoc();
+            
             //풀아웃 메뉴 - 마우스 올려지면 메뉴 나오게
             $(".outer-menu").hover(function() {
                 $(this).find(".inner-menu").css("display", "block");
@@ -32,19 +44,29 @@
             });
 
             //라이트박스
-            $(".paper").click(function() { showLightBox(); });
+            $(".paper").click(function() { showLightBox(this); });
             $("#darken-background").click(function() { hideLightBox(); });
-            function showLightBox() {
+
+            //라이트박스 보이기
+            //선택한 이미지 나오게 하는 함수 변경하기 : 함수에 파라미터 추가!
+            function showLightBox(obj) {
+                var img_src = obj.getElementsByTagName("img")[0].src;
                 $("#random-image").attr({
-                    src: function() {
-                        var rnd_height = Math.floor(Math.random() * 100) + 500;
-                        return "https://placekitten.com/600/" + rnd_height;
-                    }
+                src: function() { return img_src; }
                 });
+                // $("#random-image").attr({
+                //     src: function() {
+                //         var rnd_height = Math.floor(Math.random() * 100) + 500;
+                //         return "https://placekitten.com/600/" + rnd_height;
+                //     }
+                // });
+
                 $("#darken-background").show();
                 $("#darken-background").css("top", $(window).scrollTop());
                 $("body").css("overflow", "hidden");
             };
+
+            //라이트박스 숨기기
             function hideLightBox() {
                 $("#darken-background").hide();
                 $("body").css("overflow", "auto"); //교안 수정사항(hidden의 반대)
@@ -54,17 +76,7 @@
                 event.stopPropagation();
             });
 
-            //문서 객체 추가 함수
-            var appendDoc = function() {
-                var paper1 = '<div class="paper"><div class="paper-holder"><a><img width="190" src="images/img';
-                var paper2 = '.jpg"></a></div><p class="paper-description">Lorem ipsum dolor sit amet</p><div class="paper-content"><a class="paper-link" href="#"><img src="https://placeimg.com/30/30"></a><p class="paper-text">Lorem ipsum dolor sit amet!</p></div></div>';
-                    for (let index = 1; index < 11; index++) {
-                    $(paper1 + index + paper2).appendTo("#main-section");                    
-                }
-            }
-
-            appendDoc();
-            appendDoc();
+            
             
 
         });
@@ -118,18 +130,18 @@
     </nav>
     <section id="main-section">
         <!-- 페이퍼 여러번 복사할 것(나중에) -->
-        <div class="paper">
+        <!-- <div class="paper">
             <div class="paper-holder">
                 <a><img width="190" src="https://placekitten.com/190/280"></a>
             </div>
-            <p class="paper-description">Lorem ipsum dolor sit amet</p>
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 사진 바로 아래에 나오는 글자
             <div class="paper-content">
                 <a class="paper-link" href="#">
-                    <img src="https://placeimg.com/30/30">
+                    <img src="https://placekitten.com/30/30">
                 </a>
-                <p class="paper-text">Lorem ipsum dolor sit amet!</p>
+                <p class="paper-text">Lorem ipsum dolor sit amet!</p> 사진 설명부분에 나오는 글자
             </div>
-        </div>
+        </div> -->
         <!-- 복사할 페이퍼 끝 -->
         
     </section>
@@ -140,12 +152,12 @@
                     <img src="https://placekitten.com/70/70">
                 </a>
                 <div class="user-information-text">
-                    <h3>User</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h3>Anonymous</h3>
+                    <p>Cras a imperdiet quam. Ut vehicula turpis ut ex ornare facilisis. Etiam in leo id nunc luctus interdum non sed enim. Curabitur porttitor vitae arcu vitae consequat. Curabitur lacinia posuere nisl, eu accumsan risus tincidunt et. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi quis nisl nec arcu ullamcorper lacinia vitae nec tellus. Nullam iaculis porta cursus. Duis ornare mauris fringilla, aliquet enim nec, venenatis tellus. Cras tristique tortor magna, sit amet fringilla massa tempor in.</p>
                 </div>
             </div>
             <hr class="lightbox-splitter">
-            <img id="random-image">
+            <img id="random-image" src="#" width="600">
         </div>
     </div>
     <footer id="main-footer"></footer>
