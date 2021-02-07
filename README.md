@@ -3,6 +3,8 @@ HTML5, CSS3, JS 학습용 리포지토리(2021.01.27~2021.02.03.)
 
 (한빛아카데미)HTML5 웹 프로그래밍입문(3판) 교재를 이용하여 웹 개요, 웹 페이지 기본 구조, HTML5, CSS3, Javascript 등에 대해 학습합니다.
 
+-------------------------------------------------------------
+
 
 ## 웹 개요
 웹(Web) = 리퀘스트(Request)에 대한 리스폰스(Response)
@@ -12,7 +14,6 @@ Chapter01 웹 개요와 실습 환경 구축
 Chapter02 웹 페이지 기본 구조와 작성 방법
 
 
--------------------------------------------------------------
 
 ## HTML5
 HTML 기본 학습([HTML 소스](https://github.com/joohy97/StudyHTML/tree/main/01_HTML))
@@ -23,7 +24,7 @@ Chapter03 HTML5 기본태그
 Chapter04 HTML5 입력양식 태그와 구조화 태그
 
 
--------------------------------------------------------------
+
 
 ## CSS3
 CSS 기본 학습([CSS 소스](https://github.com/joohy97/StudyHTML/tree/main/02_CSS))
@@ -39,7 +40,6 @@ Chapter08 반응형 웹
 
 
 
--------------------------------------------------------------
 
 ## Javascript
 JavaScript 기본 학습([JS 소스](https://github.com/joohy97/StudyHTML/tree/main/03_javascript))
